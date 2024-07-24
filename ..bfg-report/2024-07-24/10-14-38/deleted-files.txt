@@ -1,0 +1,1 @@
+059208c984c8f8f8f2c82beebc23b967a3837607 539914392 terraform-provider-aws_v5.59.0_x5

@@ -33,3 +33,6 @@ namespace NotSoSimpleEcommerce.Order.Domain.Repositories.Contexts
         }
     }
 }
+
+//este codigo visa popular a tabela com os valores de Pendente ou Confirmada mas ele NAO seta
+//o valor dentro de qualquer registro da tabela.

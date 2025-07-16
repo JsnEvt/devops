@@ -4,7 +4,7 @@ using NotSoSimpleEcommerce.Shared.Models;
 
 namespace NotSoSimpleEcommerce.Shared.Repositories.Configurations;
 
-public class ProductEntityTypeConfiguration: IEntityTypeConfiguration<ProductEntity>
+public class ProductEntityTypeConfiguration : IEntityTypeConfiguration<ProductEntity>
 {
     public void Configure(EntityTypeBuilder<ProductEntity> builder)
     {
@@ -14,9 +14,14 @@ public class ProductEntityTypeConfiguration: IEntityTypeConfiguration<ProductEnt
             .Property(product => product.Id)
             .HasColumnType("integer")
             .ValueGeneratedOnAdd();
-        
+
+        //builder
+        //    .Property(order => order.Name)
+        //    .HasColumnType("text")
+        //    .IsRequired();
+
         builder
-            .Property(order => order.Name)
+            .Property(product => product.Name)
             .HasColumnType("text")
             .IsRequired();
 

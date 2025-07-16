@@ -5,7 +5,7 @@ import {
 } from 'material-react-table';
 import { ReportEntity } from '../../types/Stock.type';
 import { useQueryClient } from '@tanstack/react-query';
-import React, { useEffect, useMemo, useState } from 'react';
+//import React, { useEffect, useMemo, useState } from 'react';
 import { getReports, useReport } from '../../hooks/useReport';
 
 const Report = () => {

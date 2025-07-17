@@ -9,13 +9,13 @@ using NotSoSimpleEcommerce.Shared.Models;
 
 namespace NotSoSimpleEcommerce.Order.Domain.CommandHandlers;
 
-public sealed class UpdateOrderCommanHandler: IRequestHandler<UpdateOrderCommand, OrderResponse>
+public sealed class UpdateOrderCommandHandler: IRequestHandler<UpdateOrderCommand, OrderResponse>
 {
     private readonly IUpdateEntityRepository<OrderEntity> _updateEntityRepository;
     private readonly IMainApi _mainApiClient;
     private readonly IOrderReadRepository _readRepository;
 
-    public UpdateOrderCommanHandler
+    public UpdateOrderCommandHandler
     (
         IUpdateEntityRepository<OrderEntity> updateEntityRepository,
         IMainApi mainApiClient,

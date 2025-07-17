@@ -20,6 +20,8 @@ namespace NotSoSimpleEcommerce.Main.Controllers
         (
             CancellationToken cancellationToken, 
             [FromServices] IConfiguration configuration
+            //IConfiguration - interface usada para acessar configuracoes da aplicao dentro appsettings.json
+            //variaveis de ambiente, secrets, etc.
         )
         {
             var settings = MongoClientSettings.FromUrl(new MongoUrl(configuration.GetConnectionString("Mongo")));

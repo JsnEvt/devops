@@ -49,3 +49,8 @@ namespace NotSoSimpleEcommerce.Main.Modules
         }
     }
 }
+
+//o modulo e carregado na ocasiao em que o program.cs e executado e coloca as informacoes que 
+//permite a integracao com o cloud provider. assim, o servico que precisar operar sobre
+//esse recurso, fara chamada a parte da memoria que aloca o mesmo, e INJETA a dependencia do recurso
+//isso impede a necessidade de ter que cria-lo a cada chamada ou para cada metodo/classe que chame-o.

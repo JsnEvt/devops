@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using NotSoSimpleEcommerce.Shared.Models;
-
+//isso e o Fluent API via ModelBuilder
 namespace NotSoSimpleEcommerce.Order.Domain.Repositories.Configurations;
 
 public class OrderEntityTypeConfiguration: IEntityTypeConfiguration<OrderEntity>

@@ -11,6 +11,7 @@ using NotSoSimpleEcommerce.Shared.InOut.Requests;
 using NotSoSimpleEcommerce.Shared.Models;
 
 namespace NotSoSimpleEcommerce.Order.Controllers;
+//4 - Controller (API Layer)
 
 [ApiController]
 [Authorize]

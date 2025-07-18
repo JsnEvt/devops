@@ -4,6 +4,7 @@ using NotSoSimpleEcommerce.Shared.InOut.Requests;
 namespace NotSoSimpleEcommerce.Order.Domain.Mappings
 {
     public static class ProductRequestToCommandMapping
+        //3 - Metodo de extensao (Mapping Layer)
     {
         public static CreateOrderCommand MapToRegisterOrderCommand(this OrderRequest order)
         {

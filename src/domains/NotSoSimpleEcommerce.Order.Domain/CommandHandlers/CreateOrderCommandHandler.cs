@@ -13,6 +13,7 @@ using NotSoSimpleEcommerce.Shared.Models;
 using Microsoft.IdentityModel.Tokens;
 namespace NotSoSimpleEcommerce.Order.Domain.CommandHandlers;
 
+//5 - Handler do comando - Application Layer
 public sealed class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, OrderResponse>
 {
     private readonly IMainApi _mainApiClient;

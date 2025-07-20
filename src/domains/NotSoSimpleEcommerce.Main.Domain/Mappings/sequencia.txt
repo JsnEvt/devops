@@ -1,0 +1,27 @@
+Explicacao sobre este mapeamento no Main:
+
+1. RequestToCommandMapping
+É o mapeamento de um objeto que chega na requisição HTTP (Request) para um Command que será tratado pelo MediatR.
+
+Por que isso existe?
+O objeto da request pode ser uma DTO usada só para a camada web (ex: CreateOrderRequest).
+
+O Command carrega os dados que representam uma ação no sistema, podendo ter validações e lógica embutida.
+
+2. CommandToEntityMapping
+É o mapeamento do Command (que já representa uma intenção de ação) para a entidade de domínio (por exemplo, OrderEntity) 
+que será persistida no banco.
+
+Por que isso existe?
+O Command pode conter dados apenas para criar ou modificar algo.
+
+A entidade representa o modelo de domínio, usado para regras de negócio e persistência.
+
+3. EntityToResponseMapping
+É o mapeamento da entidade do domínio (que foi criada ou recuperada do banco) para o objeto 
+de resposta (Response) que será retornado ao cliente.
+
+Por que isso existe?
+A entidade pode conter propriedades que não devem ir para a resposta da API.
+
+O objeto de resposta (DTO) pode formatar ou simplificar dados para a apresentação.
